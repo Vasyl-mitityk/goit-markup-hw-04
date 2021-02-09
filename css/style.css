@@ -89,9 +89,19 @@
 
             
         } 
+
+        .header-logo:focus .header-logo-particle {
+            color: var(--main-title-color);
+        }
+
         .header-logo-particle {
             color:var(--tertiary-color);
         }
+
+        
+        
+
+        
         .header-name-link-main, .header-name-link-portf, .header-name-link-cont {
             font-family: var(--text-font);
             font-weight: 500; 
@@ -188,9 +198,18 @@
         }
         .link-inf:hover, .link-cont-icon:hover {
             color: var(--tertiary-color);
-            fill: var(--tertiary-color);
-                
-            }
+            fill:currentColor;
+            
+              
+        }
+
+        .link-inf:focus .link-cont-icon {
+            color: var(--main-title-color);
+            fill:var(--main-title-color);
+        }
+
+      
+        
 
         
     
@@ -438,7 +457,7 @@
       .social-list-icon {
           width: 20px;
           height: 20px;
-          fill: var(--accent-color);
+          fill: #AFB1B8;
       }
 
       .social-list-link:hover .social-list-icon,
@@ -461,10 +480,11 @@
             display:flex;
             text-align: center;
             justify-content:center;
+            margin-bottom: 34px;
         }
         .sect-port-but:not(:last-child) {
             margin-right: 8px;
-            margin-bottom: 34px;
+            
         }
 
        .sect-port-all, .sect-port-web, .sect-port-app, .sect-port-dis, .sect-port-mak {
@@ -525,18 +545,19 @@
 
     /*==========================================================sect-port-main===================================================*/
        .sect-port-list {
+           
             display:flex;
             flex-direction: row;
-            flex-wrap:wrap;
+            flex-wrap: wrap;
        }
 
        .sect-port-gallery {
-            width: 370px;
+            width: 372px;
+            display: flex;
             margin-right: 30px;
             margin-bottom: 30px;
             text-align: start;
-            background:var(--background-accent-color);
-            border: 1px solid #EEEEEE;
+            border: 1px solid rgba(238, 238, 238, 1);
            
 
      }
@@ -606,28 +627,46 @@
 
         .regular-customers-list {
             display: flex;
+        }
+
+        .regular-customers-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 170px;
             height: 90px;
             border: 1px solid #AFB1B8;
             border-radius: 4px;
-            cursor: pointer;
+            cursor: pointer; 
+            
         }
 
         .regular-customers-icon {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            width: 90px;
+            height: 52px;
             fill: #AFB1B8;
             
+            
         }
+        .regular-customers-link:hover, 
+        .regular-customers-link:focus {
+            border:  solid #2196F3;
+            
+            
+        }
+        .regular-customers-link:hover .regular-customers-icon  {
+        fill: #2196F3 ;
+     }
+       
+        
+       
 
-        .regular-customers-list:hover .regular-customers-icon  {
-            border:  1px solid #2196F3;
-            border-radius: 4px;
-            fill: var(--tertiary-color);
-        }
+        
+        
+    
+        
+        
          
          
         
@@ -649,6 +688,11 @@
 
             display: block;            
             margin-bottom: 20px;
+        }
+
+        .footer-logo:focus .footer-logo-particle {
+            color:var(--main-title-color);
+            fill:currentColor
         }
         .footer-logo-particle {
             color:var(--tertiary-color);
@@ -683,16 +727,17 @@
        }
        .footer .contenier {
            display: flex;
+           align-items: baseline;
            
            
        }
        .contenier-social {
            width: 206px;
            margin-left: 70px;
-           padding-top: 10px;
-           
+
            
        }
+
        .social-list-note {
         font-family:var(--text-font);
         font-weight: 700;
