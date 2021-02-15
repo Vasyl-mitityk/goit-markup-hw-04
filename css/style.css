@@ -17,7 +17,7 @@
 
         a {
             text-decoration: none;
-            outline: none;            
+                        
         }
 
         ul {
@@ -84,6 +84,7 @@
             font-size: 26px;
             line-height: 1.192;
             letter-spacing: 0.03em;
+            outline: none;
             
             display: block;
             min-width: 145px;
@@ -280,6 +281,7 @@
             background-color:var(--background-footer-color);
             width: 1600px;
             height: 600px;
+            margin: 0 auto;
             padding-top: 200px;
             padding-bottom: 200px;
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -292,6 +294,8 @@
 
         .group-title .contenier{
             width: 696px;
+            
+            
             
 
         }
@@ -740,6 +744,7 @@
             align-items: center;
             width: 170px;
             height: 90px;
+            outline: none;
             border: 1px solid #AFB1B8;
             border-radius: 4px;
             cursor: pointer;
@@ -758,12 +763,16 @@
             
             
         }
+
+        
         .regular-customers-link:hover, 
         .regular-customers-link:focus {
+            outline: none;
             border:  solid #2196F3;
-            
-            
+               
         }
+
+
         .regular-customers-link:hover .regular-customers-icon,
         .regular-customers-link:focus .regular-customers-icon {
          fill: var(--tertiary-color);
@@ -797,6 +806,8 @@
             font-size: 26px;
             line-height: 1.192;
             letter-spacing: 0.03em;
+            outline: none;
+            
 
             display: block;            
             margin-bottom: 20px;
@@ -814,6 +825,7 @@
             display: block;
             width: 230px;
             margin-bottom: 9px;
+            
         }
 
         .footer-logo-list:last-child {
@@ -836,6 +848,18 @@
             letter-spacing: 0.03em;
             
        }
+
+        .footer-logo-adress:hover, 
+        .footer-logo-mail:hover, 
+        .footer-logo-tel:hover,
+        .footer-logo-adress:focus, 
+        .footer-logo-mail:focus, 
+        .footer-logo-tel:focus  {
+           color: var(--tertiary-color);
+           
+       }
+
+
        .footer .contenier {
            display: flex;
            align-items: baseline;
